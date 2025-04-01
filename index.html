@@ -14,7 +14,8 @@
                 <li class="pull-left active"><a href="#" data-direction="front">Home</a></li>
                 <li class="pull-left"><a href="#" data-direction="back">Students Info</a></li>
                 <li class="pull-left"><a href="#" data-direction="top">About</a></li>
-                <li class="pull-left"><a href="#" data-direction="right">Add</a></li>
+                <!-- Use JavaScript to navigate to Student.html -->
+                <li class="pull-left"><a href="#" id="addStudentBtn" data-direction="right">Add</a></li>
             </ul>
         </nav>
     </header>
@@ -54,6 +55,14 @@
             </div>
         </div>
     </div>
+
+    <!-- JavaScript to handle the Add button click event -->
     <script src="home.js"></script>
+    <script>
+        // Add event listener to navigate to Student.html when Add button is clicked
+        document.getElementById('addStudentBtn').addEventListener('click', function() {
+            window.location.href = 'Student.html'; // Redirect to the Student.html page
+        });
+    </script>
 </body>
 </html>
